@@ -1,6 +1,3 @@
-
-
-```markdown
 # Blind 75 LeetCode Solutions in Python
 
 A comprehensive collection of Python solutions to the Blind 75 LeetCode problems with detailed explanations, visualizations, and complexity analysis.
@@ -9,6 +6,7 @@ A comprehensive collection of Python solutions to the Blind 75 LeetCode problems
 
 ![Progress](https://img.shields.io/badge/Solved-3%2F75-blue)
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 | Category | Solved | Total |
 |----------|--------|-------|
@@ -16,32 +14,32 @@ A comprehensive collection of Python solutions to the Blind 75 LeetCode problems
 | Binary | 0 | 5 |
 | Dynamic Programming | 0 | 11 |
 | Graph | 0 | 8 |
-| ... | ... | ... |
+| Interval | 0 | 5 |
+| Linked List | 0 | 6 |
+| Matrix | 0 | 4 |
+| String | 0 | 10 |
+| Tree | 0 | 14 |
+| Heap | 0 | 3 |
 
 ## 🗂️ Problem Categories
 
 ### Array (3/10)
-- ✅ [Two Sum](./problems/array/two_sum) - Easy
-- ✅ [Best Time to Buy and Sell Stock](./problems/array/best_time_to_buy_sell_stock) - Easy
-- ✅ [Contains Duplicate](./problems/array/contains_duplicate) - Easy
-- ⬜ Product of Array Except Self - Medium
-- ⬜ Maximum Subarray - Medium
-- [Continue with all array problems...]
 
-### Binary (0/5)
-[List all binary problems...]
+#### ✅ [Two Sum](./problems/array/two_sum) - Easy
+**Problem**: Given an array of integers `nums` and an integer `target`, return indices of the two numbers that add up to target.
 
-[Continue for all categories...]
+**Key Concept**: Hash Map Lookup Pattern
+- Use a dictionary to store numbers as you iterate
+- For each number, check if its complement (target - num) exists
+- **Time**: O(n) | **Space**: O(n)
 
-## 🎯 How to Use This Repository
-
-1. **Study Mode**: Read the README in each problem folder for detailed explanations
-2. **Practice Mode**: Try solving without looking at the solution
-3. **Review Mode**: Compare your solution with the provided one
-
-## 🛠️ Setup
-
-```bash
-git clone https://github.com/yourusername/blind75-python-solutions.git
-cd blind75-python-solutions
-pip install -r requirements.txt  # if you add testing dependencies
+**Solution Approach**:
+```python
+def twoSum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
+    return []
