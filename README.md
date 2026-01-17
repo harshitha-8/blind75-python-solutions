@@ -1,5 +1,4 @@
 
-## Main README.md Structure
 
 ```markdown
 # Blind 75 LeetCode Solutions in Python
