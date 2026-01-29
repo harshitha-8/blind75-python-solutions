@@ -28,7 +28,7 @@ A comprehensive collection of Python solutions to the Blind 75 LeetCode problems
 - ✅ **[Two Sum](./problems/array/two_sum)** - Easy
 - ✅ **[Best Time to Buy and Sell Stock](./problems/array/best_time_to_buy_sell_stock)** - Easy
 - ✅ **[Contains Duplicate](./problems/array/contains_duplicate)** - Easy
-- ✅ Product of Array Except Self - Medium
+- ✅ **[Product of Array Except Self](problems/array/product_of_array_except_self.py) - Medium
 - ⬜ Maximum Subarray - Medium
 - ⬜ Maximum Product Subarray - Medium
 - ⬜ Find Minimum in Rotated Sorted Array - Medium
